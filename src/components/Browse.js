@@ -1,8 +1,20 @@
 import React from 'react'
+import Header from './Header'
+import useNetflix from './useNetflix'
+import MainContainer from './MainContainer'
+import SecondaryContainer from './SecondaryContainer'
+
 
 const Browse = () => {
+
+  useNetflix();
+  
   return (
-    <div>Browse</div>
+    <div>
+      <Header/>
+      <MainContainer/>
+      <SecondaryContainer/>
+    </div>
   )
 }
 
